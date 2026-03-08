@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor SVG</title>
+    <link rel="stylesheet" href="6_1098_PADUREANU_Maria_Andreea.css">
+</head>
+<body>
+
+    <div class="container-aplicatie">
+        <div class="panou-control">
+            <h2 class="titlu-aplicatie">Editor SVG</h2>
+            
+            <div class="sectiune">
+                <label>Instrumente:</label>
+                <button id="btn-selectie" class="btn activ">Selecție / Mutare</button>
+                <button id="btn-linie" class="btn">Linie</button>
+                <button id="btn-rect" class="btn">Dreptunghi</button>
+                <button id="btn-elipsa" class="btn">Elipsă</button>
+                <button id="btn-polilinie" class="btn">Desen liber</button>
+            </div>
+
+            <div class="sectiune">
+                <label>Proprietăți:</label>
+                <div class="input-grup">
+                    <span>Culoare Linie:</span>
+                    <input type="color" id="input-culoare-stroke" value="#000000">
+                </div>
+                <div class="input-grup">
+                    <span>Culoare Fundal:</span>
+                    <input type="color" id="input-culoare-fill" value="#ff0000">
+                </div>
+                <div class="input-grup">
+                    <span>Grosime:</span>
+                    <input type="number" id="input-grosime" value="3" min="1" max="20">
+                </div>
+            </div>
+
+            <div class="sectiune">
+                <label>Acțiuni:</label>
+                <button id="btn-undo" class="btn">Undo</button>
+                <button id="btn-reset" class="btn avertisment">Pagină Nouă (Reset)</button>
+                <button id="btn-sterge" class="btn pericol">Șterge Element</button>
+            </div>
+
+            <div class="sectiune-jos" style="margin-top: auto; padding-top: 20px;">
+                <button id="btn-salvare" class="btn primar">Salvează SVG</button>
+                <button id="btn-export" class="btn secundar">Exportă PNG</button>
+            </div>
+        </div>
+
+        <div id="spatiu-lucru"></div>
+    </div>
+    <canvas id="canvas-ascuns" style="display: none;"></canvas>
+    <script src="6_1098_PADUREANU_Maria_Andreea.js"></script>
+</body>
+</html>

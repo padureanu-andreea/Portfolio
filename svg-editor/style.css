@@ -1,0 +1,169 @@
+/* Resetare si stil general */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #F7F3E8; 
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container-aplicatie {
+    display: flex;
+    height: 100%;
+}
+
+/* Panoul lateral (meniul) */
+
+.panou-control {
+    width: 260px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-right: 2px solid #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 2px 0 15px rgba(0,0,0,0.05);
+
+    /* Se poate da scroll daca continutul depaseste inaltimea ecranului */
+
+    height: 100vh; 
+    overflow-y: auto; 
+    box-sizing: border-box; 
+}
+
+.titlu-aplicatie {
+    color: #9370DB; 
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 2px solid #E6E6FA;
+    padding-bottom: 10px;
+}
+
+.sectiune {
+    background-color: #FAFAFA;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #EEEEEE;
+}
+
+.sectiune label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.input-grup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.85em;
+}
+
+/* Stiluri Butoane */
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: #E6E6FA; 
+    color: #4A4A4A;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.btn:hover {
+    background-color: #D8BFD8; 
+}
+
+.btn.activ {
+    background-color: #9370DB;
+    color: white;
+    font-weight: bold;
+}
+
+.btn.pericol {
+    background-color: #FFB7B2; 
+}
+
+.btn.avertisment {
+    background-color: #FFDAC1; 
+    color: #4A4A4A;
+}
+
+.btn.avertisment:hover {
+    background-color: #FFC8A2; 
+}
+
+.btn.primar {
+    background-color: #AEC6CF; 
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn.secundar {
+    background-color: #FFDAC1; 
+    text-align: center;
+}
+
+/* Input-uri */
+
+input[type="color"] {
+    border: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background: none;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 3px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+}
+
+/* Zona de lucru (canvasul) */
+
+#spatiu-lucru {
+    flex-grow: 1;
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none; /* previne selectarea textului */
+}
+
+/* Stilul foii de desen propriu-zise */
+
+svg {
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    cursor: crosshair;
+}
+
+.element-selectat {
+    stroke-dasharray: 6; 
+    opacity: 0.8;
+}
+
+/* Puncte de control pentru polilinie */
+
+.nod-control {
+    fill: #FFF;
+    stroke: #9370DB;
+    stroke-width: 2px;
+    cursor: pointer;
+}
+
+.nod-control:hover {
+    fill: #9370DB;
+}
