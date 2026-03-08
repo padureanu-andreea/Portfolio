@@ -1,0 +1,717 @@
+{
+	"info": {
+		"_postman_id": "ca2480d7-8464-4795-a384-4565e01a4cc6",
+		"name": "anti-food-waste-app",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49723961",
+		"_collection_link": "https://padureanuandreea150-9139503.postman.co/workspace/ANDREEA-PADUREANU's-Workspace~46f65547-7ecc-4cb1-849a-60fba939bd95/collection/49723961-ca2480d7-8464-4795-a384-4565e01a4cc6?action=share&source=collection_link&creator=49723961"
+	},
+	"item": [
+		{
+			"name": "resetarea bd",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inregistrare user andreea",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"andreea\",\r\n  \"email\": \"andreea@test.com\",\r\n  \"password\": \"passAndreea123\",\r\n  \"phone\": \"0722111222\",\r\n  \"bio\": \"I hate food waste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inregistrare user bogdan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"bogdan\",\r\n  \"email\": \"bogdan@test.com\",\r\n  \"password\": \"passBogdan123\",\r\n  \"phone\": \"0733444555\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user andreea",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"andreea\", \"email\": \"andreea@test.com\", \"password\": \"passAndreea123\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user bogdan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"bogdan\", \"email\": \"bogdan@test.com\", \"password\": \"passBogdan123\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verificare profil (me)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTc2NTY0MjM2NCwiZXhwIjoxNzY2MjQ3MTY0fQ.5k57ZyBG3NYErRg32zf1bWfxFzpeZN92Pafwa7pBJUY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/auth/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editare profil (me)",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTc2NTY0MjM2NCwiZXhwIjoxNzY2MjQ3MTY0fQ.5k57ZyBG3NYErRg32zf1bWfxFzpeZN92Pafwa7pBJUY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"bio\": \"Updated bio\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creare grup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTc2NTY0MjM2NCwiZXhwIjoxNzY2MjQ3MTY0fQ.5k57ZyBG3NYErRg32zf1bWfxFzpeZN92Pafwa7pBJUY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\": \"Vecinii din Bloc\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/groups",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adaugare membru in grup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTc2NTY0MjM2NCwiZXhwIjoxNzY2MjQ3MTY0fQ.5k57ZyBG3NYErRg32zf1bWfxFzpeZN92Pafwa7pBJUY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"userId\": 2 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/groups/1/members",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"groups",
+						"1",
+						"members"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vizualizare membrii grup",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTc2NTY0MjM2NCwiZXhwIjoxNzY2MjQ3MTY0fQ.5k57ZyBG3NYErRg32zf1bWfxFzpeZN92Pafwa7pBJUY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/groups/1/members",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"groups",
+						"1",
+						"members"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creare tag global",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTc2NTY0MjM2NCwiZXhwIjoxNzY2MjQ3MTY0fQ.5k57ZyBG3NYErRg32zf1bWfxFzpeZN92Pafwa7pBJUY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Vegan\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "asignare tag lui bogdan",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTc2NTY0MjM2NCwiZXhwIjoxNzY2MjQ3MTY0fQ.5k57ZyBG3NYErRg32zf1bWfxFzpeZN92Pafwa7pBJUY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"tagId\": 1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/groups/1/members/2/tags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"groups",
+						"1",
+						"members",
+						"2",
+						"tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creare produs (inventar user A)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTc2NTY0MjM2NCwiZXhwIjoxNzY2MjQ3MTY0fQ.5k57ZyBG3NYErRg32zf1bWfxFzpeZN92Pafwa7pBJUY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Iaurt grecesc\",\r\n  \"category\": \"Lactate\",\r\n  \"quantity\": \"3 cutii\",\r\n  \"expiryDate\": \"2025-12-20\",\r\n  \"notes\": \"Iaurt cumparat din Grecia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/inventory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verificare inventar propriu (user A)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTc2NTY0MjM2NCwiZXhwIjoxNzY2MjQ3MTY0fQ.5k57ZyBG3NYErRg32zf1bWfxFzpeZN92Pafwa7pBJUY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/inventory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "partajare produs catre grup (owner A)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTc2NTY0MjM2NCwiZXhwIjoxNzY2MjQ3MTY0fQ.5k57ZyBG3NYErRg32zf1bWfxFzpeZN92Pafwa7pBJUY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"groupIds\": [1] }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/products/1/share",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"1",
+						"share"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verificare feed (user B)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjIsImlhdCI6MTc2NTY0MjQ4NSwiZXhwIjoxNzY2MjQ3Mjg1fQ.XQdvvI85E_Yn8Zd2QqwlMdN4cXcnyz18G-X3s45DzTY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/feed/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"feed",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creare cerere revendicare (user B)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjIsImlhdCI6MTc2NTY0MjQ4NSwiZXhwIjoxNzY2MjQ3Mjg1fQ.XQdvvI85E_Yn8Zd2QqwlMdN4cXcnyz18G-X3s45DzTY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/inventory/1/claims",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"inventory",
+						"1",
+						"claims"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verificare cereri de revendicare (user A)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTc2NTY0MjM2NCwiZXhwIjoxNzY2MjQ3MTY0fQ.5k57ZyBG3NYErRg32zf1bWfxFzpeZN92Pafwa7pBJUY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/inventory/1/claims",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"inventory",
+						"1",
+						"claims"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "aprobare cerere de revendicare (user A aproba cererea lui user B)",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTc2NTY0MjM2NCwiZXhwIjoxNzY2MjQ3MTY0fQ.5k57ZyBG3NYErRg32zf1bWfxFzpeZN92Pafwa7pBJUY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"status\": \"approved\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/claims/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"claims",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "share pe fb (user A)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTc2NTY0MjM2NCwiZXhwIjoxNzY2MjQ3MTY0fQ.5k57ZyBG3NYErRg32zf1bWfxFzpeZN92Pafwa7pBJUY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/integrations/share/facebook/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"integrations",
+						"share",
+						"facebook",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "share pe insta (user A)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTc2NTY0MjM2NCwiZXhwIjoxNzY2MjQ3MTY0fQ.5k57ZyBG3NYErRg32zf1bWfxFzpeZN92Pafwa7pBJUYeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTc2NTY0MjM2NCwiZXhwIjoxNzY2MjQ3MTY0fQ.5k57ZyBG3NYErRg32zf1bWfxFzpeZN92Pafwa7pBJUY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/integrations/share/instagram/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"integrations",
+						"share",
+						"instagram",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stergere produs (user A)",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTc2NTY0MjM2NCwiZXhwIjoxNzY2MjQ3MTY0fQ.5k57ZyBG3NYErRg32zf1bWfxFzpeZN92Pafwa7pBJUY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/inventory/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"inventory",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "iesire din grup (user B)",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjIsImlhdCI6MTc2NTY0MjQ4NSwiZXhwIjoxNzY2MjQ3Mjg1fQ.XQdvvI85E_Yn8Zd2QqwlMdN4cXcnyz18G-X3s45DzTY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/groups/1/members/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"groups",
+						"1",
+						"members",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verificare rute debug (grupuri existente)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/debug/groups",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"debug",
+						"groups"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
