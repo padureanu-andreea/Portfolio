@@ -48,7 +48,7 @@ Backend application developed collaboratively to simulate operations within a ma
 
 The project involved applying Python and object-oriented programming to model manufacturing entities and workflows, designing the relational database, developing APIs and testing the implemented functionality. Git and GitHub were used throughout the development process for version control and team collaboration.
 
-[View Project →](./plant-management-backend)
+[View Project →](./PlantManagementBackend)
 
 ---
 
@@ -60,7 +60,7 @@ The project involved applying Python and object-oriented programming to model ma
 
 Designed and implemented a relational database for pharmacy management, including schema design, SQL queries, PL/SQL procedures, functions and triggers for managing medications, suppliers, customers and sales.
 
-[View Project →](./pharmacy-database)
+[View Project →](./PharmacyDatabase)
 
 ---
 
@@ -74,7 +74,7 @@ Full-stack web application developed collaboratively to help reduce food waste b
 
 The project involved frontend and backend development together with relational data management.
 
-[View Project →](./anti-food-waste-app)
+[View Project →](./AntiFoodWasteApp)
 
 ---
 
@@ -86,7 +86,7 @@ The project involved frontend and backend development together with relational d
 
 Coursework exercises focused on implementing common software design patterns in Java, including individual patterns and examples combining multiple patterns.
 
-[View Coursework →](./design-patterns)
+[View Coursework →](./DesignPatterns)
 
 ### Demographic Clustering Analysis of Romanian Counties
 
@@ -94,7 +94,7 @@ Coursework exercises focused on implementing common software design patterns in 
 
 Applied hierarchical clustering using Ward's method to group Romanian counties based on demographic indicators and identify similarities in population characteristics.
 
-[View Project →](./demographic-clustering)
+[View Project →](./DemographicClustering)
 
 ### Real Estate Agency Management Application
 
@@ -102,7 +102,7 @@ Applied hierarchical clustering using Ward's method to group Romanian counties b
 
 Desktop application for managing properties, agents, clients and real estate offers.
 
-[View Project →](./real-estate-management)
+[View Project →](./RealEstateManagement)
 
 ### SVG Graphics Editor
 
@@ -110,7 +110,7 @@ Desktop application for managing properties, agents, clients and real estate off
 
 Browser-based SVG editor for creating and modifying vector graphics, including element manipulation and export functionality.
 
-[View Project →](./svg-editor)
+[View Project →](./SvgEditor)
 
 ---
 
