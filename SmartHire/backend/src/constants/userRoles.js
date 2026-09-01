@@ -1,0 +1,8 @@
+const USER_ROLES = {
+  ADMIN: "ADMIN",
+  CANDIDAT: "CANDIDAT",
+  RECRUTOR: "RECRUTOR",
+  MANAGER: "MANAGER"
+};
+
+module.exports = USER_ROLES;
