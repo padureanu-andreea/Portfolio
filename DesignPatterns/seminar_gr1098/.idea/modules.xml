@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Seminar01/Seminar01.iml" filepath="$PROJECT_DIR$/Seminar01/Seminar01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar02/Seminar02.iml" filepath="$PROJECT_DIR$/Seminar02/Seminar02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar04_SimpleFactory/Seminar04_SimpleFactory.iml" filepath="$PROJECT_DIR$/Seminar04_SimpleFactory/Seminar04_SimpleFactory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar04_Singleton/Seminar04_Singleton.iml" filepath="$PROJECT_DIR$/Seminar04_Singleton/Seminar04_Singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar05_Builder/Seminar05_Builder.iml" filepath="$PROJECT_DIR$/Seminar05_Builder/Seminar05_Builder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar06/Seminar06_FactoryMethod.iml" filepath="$PROJECT_DIR$/Seminar06/Seminar06_FactoryMethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar06_Prototype/Seminar06_Prototype.iml" filepath="$PROJECT_DIR$/Seminar06_Prototype/Seminar06_Prototype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar08_Composite/Seminar08_Composite.iml" filepath="$PROJECT_DIR$/Seminar08_Composite/Seminar08_Composite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar08_Decorator/Seminar08_Decorator.iml" filepath="$PROJECT_DIR$/Seminar08_Decorator/Seminar08_Decorator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar09_Adapter/Seminar09_Adapter.iml" filepath="$PROJECT_DIR$/Seminar09_Adapter/Seminar09_Adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar09_Facade/Seminar09_Facade.iml" filepath="$PROJECT_DIR$/Seminar09_Facade/Seminar09_Facade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar10_Flyweight/Seminar10_Flyweight.iml" filepath="$PROJECT_DIR$/Seminar10_Flyweight/Seminar10_Flyweight.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar10_Proxy/Seminar10_Proxy.iml" filepath="$PROJECT_DIR$/Seminar10_Proxy/Seminar10_Proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar11_ChainOfResponsability/Seminar11_ChainOfResponsability.iml" filepath="$PROJECT_DIR$/Seminar11_ChainOfResponsability/Seminar11_ChainOfResponsability.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar11_Command/Seminar11_Command.iml" filepath="$PROJECT_DIR$/Seminar11_Command/Seminar11_Command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar11_Command2/Seminar11_Command2.iml" filepath="$PROJECT_DIR$/Seminar11_Command2/Seminar11_Command2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar11_Observer/Seminar11_Observer.iml" filepath="$PROJECT_DIR$/Seminar11_Observer/Seminar11_Observer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar11_Strategy/Seminar11_Strategy.iml" filepath="$PROJECT_DIR$/Seminar11_Strategy/Seminar11_Strategy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar12_Observer2/Seminar12_Observer2.iml" filepath="$PROJECT_DIR$/Seminar12_Observer2/Seminar12_Observer2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar12_Testare/Seminar12_Testare.iml" filepath="$PROJECT_DIR$/Seminar12_Testare/Seminar12_Testare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercitiu_abonament/exercitiu_abonament.iml" filepath="$PROJECT_DIR$/exercitiu_abonament/exercitiu_abonament.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercitiu_cafenea/exercitiu_cafenea.iml" filepath="$PROJECT_DIR$/exercitiu_cafenea/exercitiu_cafenea.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercitiu_club_sportiv/exercitiu_club_sportiv.iml" filepath="$PROJECT_DIR$/exercitiu_club_sportiv/exercitiu_club_sportiv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercitiu_documente/exercitiu_documente.iml" filepath="$PROJECT_DIR$/exercitiu_documente/exercitiu_documente.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercitiu_magazin/exercitiu_magazin.iml" filepath="$PROJECT_DIR$/exercitiu_magazin/exercitiu_magazin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminar_gr1098.iml" filepath="$PROJECT_DIR$/seminar_gr1098.iml" />
+    </modules>
+  </component>
+</project>
